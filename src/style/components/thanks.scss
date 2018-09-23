@@ -1,0 +1,39 @@
+.thanks {
+    display: flex;
+    height: 100%;
+    background-color: #1383DC;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+    }
+
+    &__img {
+        width: 165px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    &__success {
+        color: #FFFFFF;
+        font-family: 'Montserrat';
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 30px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    &__text {
+        opacity: 0.8;
+        color: #FFFFFF;
+        font-family: 'Roboto';
+        font-size: 16px;
+        line-height: 25px;
+        text-align: center;
+        padding: 0 30px;
+        margin-top: 10px;
+    }
+}

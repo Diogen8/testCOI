@@ -1,0 +1,109 @@
+.payment {
+    display: flex;
+    height: 100%;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__top {
+        background-color: #1383DC;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-height: 200px;
+        padding-bottom: 100px;
+    }
+
+    &__price {
+        color: #FFFFFF;	
+        font-family: 'Roboto';	
+        font-size: 60px;	
+        font-weight: 300;	
+        text-align: center;
+        line-height: 60px;
+        position: relative;
+
+        &-symbol {
+            color: #FFFFFF;
+            font-family: 'Montserrat';
+            font-size: 19px;
+            font-weight: 500;   
+            position: absolute;
+            height: 20px;
+            top: 10px;
+            left: -15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }   
+    }
+
+    &__amount {
+        opacity: 0.5;
+        color: #FFFFFF;
+        font-family: 'Roboto';
+        font-size: 14px;
+        line-height: 27px;
+        text-align: center;
+        width: 100%;
+    }
+
+    &__bottom {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+    }
+
+    &__card {
+        width: 100%;
+
+        &-img {
+            width: 308px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            transform: translateY(-25%);
+            box-shadow: 0 12px 20px 0 rgba(71,89,98,0.36);
+        }
+    }
+
+    &__form {
+        display: flex;
+        padding: 0 30px;
+        margin-bottom: 50px;
+
+        &-column {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 0;
+            flex-shrink: 0;
+
+            &_left {
+                flex-basis: 67%;
+                padding-right: 17px;
+            }
+
+            &_right {
+                padding-left: 17px;
+                flex-basis: 21%;
+            }
+        }
+    }
+
+    &__input {
+        @extend .delivery__input;
+        display: flex;
+        width: 100%;
+    }
+
+    &__label {
+        color: #90A4AE;
+        font-family: 'Roboto';
+        font-size: 12px;
+        letter-spacing: 0.6px;
+        line-height: 14px;
+    }
+}

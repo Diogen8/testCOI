@@ -1,0 +1,11 @@
+.card-preview {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+    &__img {
+        max-height: 424px;
+        height: 58vh;
+        width: 100%;
+    }
+}

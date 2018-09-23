@@ -1,0 +1,119 @@
+.delivery {
+    display: flex;
+    height: 100%;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__top {
+        display: flex;
+    }
+
+    &__users {
+        width: 270px;
+        height: 28px;
+        margin-left: 26px;
+        margin-right: 8px;
+        display: flex;
+        align-items: center;
+
+        &::after {
+            content: '';
+            display: flex;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 90px;
+            height: 100%;
+            background: linear-gradient(90deg, rgba(255,255,255,0) 0%, #FFFFFF 100%);
+        } 
+    }
+
+    &__user {
+        color: #90A4AE;
+        font-family: 'Roboto';
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        line-height: 16px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-right: 20px;
+        height: 28px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__add {
+        font-family: 'Roboto';
+        color: #1383DC;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 22px;
+        height: 22px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    &__user-name {
+        color: #263238;
+        font-family: 'Montserrat';
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+
+    &__label {
+        color: #90A4AE;
+        font-family: 'Roboto';
+        font-size: 12px;
+        letter-spacing: 0.6px;
+        line-height: 14px;
+    }
+
+    &__input {
+        color: #37474F;
+        font-family: 'Roboto';
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        padding: 4px 0;
+        border: none;
+        border-bottom: 1px solid #BDCAD0;
+        margin-bottom: 20px;
+
+        &::placeholder {
+            opacity: 0.6;
+        }
+
+        &:focus {
+            outline: 0px;
+            border-bottom-color: #1383DC;
+        }
+    }
+
+    &__delete {
+        color: #C62828;
+        font-family: 'Roboto';
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+
+        &-img {
+            margin-right: 8px;
+        }
+    }
+}

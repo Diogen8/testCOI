@@ -1,0 +1,43 @@
+.greeting {
+    margin-top: 55px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+
+    &__head {
+        color: #263238;
+        font-family: 'Roboto';
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+        padding: 0 28px;
+        border-bottom: 1px solid #D8DFE4;
+        padding-bottom: 20px;
+    }
+
+    &__body {
+        padding: 20px 28px; 
+    }
+
+    &__textarea {
+        width: 100%;
+        border: none;
+        color: #37474F;	
+        font-family: 'Roboto';	
+        font-size: 16px;	
+        line-height: 27px;
+        height: 22vh;
+        max-height: 200px;
+        resize: none;
+    }
+
+    &__symbols-remaining {
+        color: #90A4AE;	
+        font-family: 'Roboto';	
+        font-size: 12px;	
+        font-weight: 500;	
+        line-height: 14px;	
+        text-align: right;
+    }
+}

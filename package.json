@@ -1,0 +1,25 @@
+{
+  "name": "testCOI",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "node-sass": "^3.5.0-beta.1",
+    "browser-sync": "^2.23.7",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-imagemin": "^4.0.0",
+    "gulp-sass": "^4.0.0",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^4.3.11",
+    "imagemin-pngquant": "^5.0.1",
+    "rimraf": "^2.6.2",
+    "gulp-svg-sprite": "^1.0.0"
+  },
+  "author": "",
+  "license": "ISC"
+}

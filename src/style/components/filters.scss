@@ -1,0 +1,136 @@
+.filters {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+
+    &__wrapper {
+        display: flex;
+        height: 100%;
+    }
+
+    &__head {
+        display: flex;
+        justify-content: center;
+        padding: 15px 0 20px 0;
+        border-bottom: 1px solid #D8DFE4;
+    }
+
+    &__body {
+        display: flex;
+    }
+
+    &__panel-name {
+        color: #263238;
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: 0 32.5px;
+        position: relative;
+
+        &_active::after {
+            content: '';
+            display: block;
+            height: 3px;
+            width: 25px;
+            background-color: #E45F0D;
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translate(-50%,0);
+        }
+    }
+
+    &__panel {
+        display: flex;
+        opacity: 0;
+        visibility: hidden;
+        width: 100%;
+        position: absolute;
+
+        &_active {
+            opacity: 1;
+        visibility: visible;
+        position: relative;
+        }
+    }
+
+    &__footer {
+        width: 90%;
+        display: none;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        position: relative;
+
+        &_active {
+            display: flex;
+        }
+    }
+
+    &__slide-label {
+        position: absolute;
+        top: -15px;
+        width: 24px;
+        display: block;
+        text-align: center;
+        color: #37474F;	
+        font-family: 'Roboto';	
+        font-size: 16px;	
+        font-weight: 500;	
+        line-height: 19px;
+    }
+}
+
+.filter {
+    display: flex;
+    width: 100%;
+    width: 100vw;
+
+    &__item {
+        display: block;
+        width: 76px;
+        overflow: hidden;
+        padding: 0 10px;
+
+
+        &-img {
+            box-sizing: border-box;	
+            height: 76px;	
+            width: 76px !important;	
+            border: 3px solid #FFFFFF;	
+            border-radius: 50%;
+            margin-bottom: 14px;
+            border: 3px solid $f;
+            box-shadow: 0 12px 20px 0 rgba(71,89,98,0.25);
+
+        }
+
+        &-name {
+            color: #263238;	
+            font-family: 'Roboto';	
+            font-size: 11px;
+            font-weight: 500;	
+            line-height: 13px;	
+            text-align: center;
+        }
+    }
+
+    .owl-item:not(.center) {
+        .filter__item-img {
+            border: 3px solid transparent;
+            box-shadow: none;
+            opacity: 0.8;
+        }
+
+        .filter__item-name {
+            color: #B0BEC5;
+        }
+    }
+
+    .owl-dots {
+        display: none;
+    }
+}

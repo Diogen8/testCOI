@@ -1,0 +1,29 @@
+.text {
+    &_montserrat {
+        font-family: 'Montserrat';
+    }
+
+    &_roboto {
+        font-family: 'Roboto';
+    } 
+
+    &_normal {
+        font-weight: normal;
+    }
+
+    &_bold {
+        font-weight: 600;
+    }
+
+    &_bolder {
+        font-weight: 900;
+    }
+
+    &_white {
+        color: $f;
+    }
+
+    &_dark {
+        color: $dark;
+    }
+}
